@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">sidemenu</string>
+    <string name="menu">menu</string>
+    <string name="imageview">imageview</string>
+    <string name="action_settings">action_settings</string>
+    <string name="image_view_fragment">image view fragment</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>

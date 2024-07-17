@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="floating action bar"
+            android:src="@drawable/icon" />
+
+        <!-- FAB for setting alarm -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/set_alarm_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/add_fab"
+            android:layout_alignEnd="@id/add_fab"
+            android:layout_marginEnd="-6dp"
+            android:layout_marginBottom="11dp"
+            android:fabSize="normal"
+            android:src="@drawable/alarmset" />
+
+        <!-- Text for setting alarm -->
+        <TextView
+            android:id="@+id/set_alarm_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/set_alarm_fab"
+            android:layout_alignEnd="@id/set_alarm_fab"
+            android:layout_marginEnd="8dp"
+            android:text="Set Alarm" />
+
+        <!-- FAB for canceling alarm -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cancel_alarm_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/set_alarm_fab"
+            android:layout_alignEnd="@id/add_fab"
+            android:layout_marginBottom="24dp"
+            android:fabSize="normal"
+            android:src="@drawable/cancelarm" />
+
+        <!-- Text for canceling alarm -->
+
+        <!-- FAB for viewing tasks -->
+        <TextView
+            android:id="@+id/cancel_alarm_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/cancel_alarm_fab"
+            android:layout_alignBottom="@id/cancel_alarm_fab"
+            android:layout_marginEnd="194dp"
+            android:layout_marginBottom="2dp"
+            android:text="Cancel Alarm" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/view_tasks_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/cancel_alarm_fab"
+            android:layout_alignEnd="@id/add_fab"
+            android:layout_marginBottom="24dp"
+            android:fabSize="normal"
+            android:src="@drawable/viewtask" />
+
+        <!-- Text for viewing tasks -->
+        <TextView
+            android:id="@+id/view_tasks_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/view_tasks_fab"
+            android:layout_alignEnd="@id/view_tasks_fab"
+            android:layout_marginEnd="8dp"
+            android:text="View Tasks" />
+
+    </RelativeLayout>

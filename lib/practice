@@ -1,0 +1,95 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+void main() {
+  runApp(const MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      title: "",
+      home: MyTextField(),
+    );
+  }
+}
+class MyTextField extends StatefulWidget {
+  const MyTextField({super.key});
+  @override
+  State<StatefulWidget> createState() => _MyCustomState();
+}
+class _MyCustomState extends State<MyTextField> {
+  final userNameController = TextEditingController();
+  final passwordController = TextEditingController();
+  @override
+  void dispose() {
+    userNameController.dispose();
+    passwordController.dispose();
+    super.dispose();
+  }
+@override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("TextField Sample"),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(
+              padding: EdgeInsets.all(15),
+              child: TextField(
+                controller: userNameController,
+                onChanged: (val){
+                  setState(() {
+                    print(userNameController.text);
+                  });
+                },
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: "Username",
+                    hintText: "Enter your username"
+                ),
+              ),
+            ),
+Padding(
+              padding: EdgeInsets.all(15),
+              child: TextField(
+                controller: passwordController,
+                obscureText: true,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: "Password",
+                    hintText: "Enter your password"
+                ),
+              ),
+            ),
+Padding(
+                padding: EdgeInsets.all(15),
+                child : SizedBox(
+                  width: double.infinity,
+                  height: 50,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue
+                    ),
+                    onPressed: () {
+                      print(userNameController.text);
+                      print(passwordController.text);
+                    },
+                    child: Text("Login",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15
+                      ),),
+                  ),
+                )
+            )
+          ],
+        ),
+      )
+    );
+  }
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="-6dp"
+        android:headerBackground="@color/Blue"
+        android:numbersSelectorColor="@color/Blue" />
+
+    <TextView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="15dp"
+        android:drawableStart="@drawable/rename" />
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:hint="Task Title"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/task_description"
+        android:minHeight="48dp" />
+
+    <!-- CalendarView -->
+    <CalendarView
+        android:id="@+id/calendar"
+        android:outlineSpotShadowColor="@color/Blue"
+        android:backgroundTint="#063970"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- FABs for various actions -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/floating_action_bar"
+        android:src="@drawable/icon" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:visibility="invisible"
+        android:id="@+id/set_alarm_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_fab"
+        android:layout_alignEnd="@id/add_fab"
+        android:layout_marginEnd="-6dp"
+        android:layout_marginBottom="11dp"
+        android:contentDescription="set alarm"
+        android:src="@drawable/alarmset" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/set_alarm_action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_alarm_fab"
+        android:layout_alignEnd="@id/set_alarm_fab"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:text="Set Alarm" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cancel_alarm_fab"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/set_alarm_fab"
+        android:layout_alignEnd="@id/add_fab"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="cancel"
+      android:src="@drawable/cancelarm" />
+
+    <TextView
+        android:id="@+id/cancel_alarm_action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@id/cancel_alarm_fab"
+        android:layout_alignEnd="@id/cancel_alarm_fab"
+        android:layout_marginTop="-17dp"
+        android:layout_marginEnd="-17dp"
+        android:text="@string/cancel_alarm" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/view_tasks_fab"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cancel_alarm_fab"
+        android:layout_alignEnd="@id/add_fab"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="cancel"
+        android:src="@drawable/viewtask"
+        />
+
+    <TextView
+        android:id="@+id/view_tasks_action_text"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_tasks_fab"
+        android:layout_alignEnd="@id/view_tasks_fab"
+        android:layout_marginTop="-21dp"
+        android:layout_marginEnd="-13dp"
+        android:text="View Tasks" />
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/add_task_fab"
+    android:layout_above="@+id/view_tasks_fab"
+    android:layout_alignEnd="@id/add_fab"
+    android:layout_marginBottom="24dp"
+    android:visibility="invisible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/cancel"
+    android:src="@drawable/addnote"
+    />
+
+    <TextView
+        android:id="@+id/task_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/add_task_fab"
+        android:layout_alignEnd="@id/add_task_fab"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-22dp"
+        android:layout_marginEnd="-2dp"
+        android:text="Add Task" />
+</RelativeLayout>

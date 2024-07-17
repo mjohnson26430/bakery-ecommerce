@@ -1,0 +1,110 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifmenu"
+        android:layout_width="918dp"
+        android:layout_height="1100dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/openingscreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772" />
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/newbit"
+        android:gravity="center"
+        android:paddingTop="80dp"
+        android:paddingBottom="70dp"
+        android:text="@string/play"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/newbit"
+        android:gravity="center"
+        android:paddingBottom="70dp"
+        android:text="@string/audio1"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:drawableStartCompat="@drawable/sound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start" />
+
+    <TextView
+        android:id="@+id/leaderboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="70dp"
+        android:fontFamily="@font/newbit"
+        android:text="@string/leaderboard"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setting"
+        app:drawableStartCompat="@drawable/leaderboard" />
+
+    <TextView
+        android:id="@+id/funfacts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/newbit"
+        android:text="@string/did_you_know"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/leaderboard"
+        app:drawableStartCompat="@drawable/language" />
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/newbit"
+        android:gravity="center"
+        android:text="@string/exit"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/funfacts"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800dp"
+    android:layout_height="1000dp"
+    android:background="@drawable/aesthetic"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+    </LinearLayout>
+
+    <TextView
+       android:layout_marginTop="15dp"
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/eightbit"
+        android:textColor="@color/black"
+        android:text="@string/please_enter_your_name"
+        android:layout_below="@id/sakcatgif"
+        android:paddingTop="16dp"
+        android:textStyle="italic"
+        android:paddingBottom="16dp"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/dialog_input"
+        android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/dialog_message"
+    android:layout_marginTop="-1dp"
+    android:autofillHints=""
+    android:background="@android:drawable/edit_text"
+    android:fontFamily="@font/eightbit"
+    android:hint="@string/your_name"
+    android:padding="10dp"
+    android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_input"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/sakcatgif"
+        android:layout_width="363dp"
+        android:layout_height="142dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/sakcat" />
+</RelativeLayout>

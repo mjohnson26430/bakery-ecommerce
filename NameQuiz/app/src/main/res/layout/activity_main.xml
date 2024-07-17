@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mainmenui"
+        android:alpha="0.75"
+        android:contentDescription="@string/opacity" />
+
+    <TextView
+        android:id="@+id/allquestions"
+        android:fontFamily="@font/newbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/name_trivia"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingTop="55dp"
+        android:textColor="#3d5267" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/allquestions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/newbit"
+        android:text="@string/insert_question"
+        android:textAlignment="center"
+        android:textColor="#3d5267"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/elapsedTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/allquestions"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="-23dp"
+        android:layout_marginEnd="249dp"
+        android:layout_marginBottom="-76dp"
+        android:fontFamily="@font/newbit"
+        android:paddingTop="30dp"
+        android:layout_toStartOf="@id/allquestions"
+        android:text="@string/_0_00"
+        android:textColor="#3d5267"
+        android:textSize="14sp"
+        app:drawableStartCompat="@drawable/time" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewChoices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        android:layout_marginBottom="50dp"
+        android:elevation="40dp"
+        app:cardBackgroundColor="#d8cdab"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:id="@+id/choicesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:fontFamily="@font/newbit"
+                android:id="@+id/ans_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/answer_a"
+                android:textSize="22sp"
+                android:elevation="20dp"
+                android:shadowColor="@color/black"
+                android:background="#82b7e9"
+                android:textColor="#3d5267" />
+
+            <Button
+                android:id="@+id/ans_b"
+                android:textSize="22sp"
+                android:fontFamily="@font/newbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#82b7e9"
+                android:text="@string/answer_b"
+                android:elevation="20dp"
+                android:shadowColor="@color/black"
+                android:textColor="#3d5267" />
+
+            <Button
+                android:id="@+id/ans_c"
+                android:textSize="22sp"
+                android:fontFamily="@font/newbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#82b7e9"
+                android:shadowColor="@color/black"
+                android:elevation="20dp"
+                android:text="@string/answer_c"
+                android:textColor="#3d5267" />
+
+            <Button
+                android:id="@+id/ans_d"
+                android:fontFamily="@font/newbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#82b7e9"
+                android:text="@string/answer_d"
+                android:shadowColor="@color/black"
+                android:elevation="20dp"
+                android:textSize="22sp"
+                android:textColor="#3d5267" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewChoices"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:fontFamily="@font/newbit"
+        android:textSize="20sp"
+        android:text="@string/next"
+        android:textStyle="bold"
+        android:backgroundTint="#e49555" />
+
+    <TextView
+        android:id="@+id/dynamicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="@font/newbit"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>
+

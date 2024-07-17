@@ -1,0 +1,46 @@
+    <resources>
+        <string name="app_name">Name Quiz</string>
+        <string name="audio">AUDIO</string>
+        <string name="volume">VOLUME</string>
+        <string name="off">OFF</string>
+        <string name="hi">hi</string>
+        <string name="leaderboard">LEADERBOARD</string>
+            <string name="audio1">AUDIO</string>
+            <string name="play">PLAY</string>
+            <string name="behind_the_name">BEHIND THE NAME</string>
+            <string name="main_menu">MAIN MENU</string>
+            <string name="exit">[EXIT]</string>
+            <string name="answer_d">Answer D</string>
+            <string name="_0_seconds">: 0 seconds</string>
+            <string name="next">Next</string>
+            <string name="answer_c">Answer C</string>
+            <string name="answer_b">Answer B</string>
+            <string name="insert_question">Insert Question</string>
+            <string name="etymology_quest_name_trivia">Etymology Quest: Name Trivia</string>
+            <string name="answer_a">Answer A</string>
+            <string name="search_name">Search Name</string>
+            <string name="search">Search...</string>
+        <string name="this_is_the_title">this is the title</string>
+        <string name="dynamic_text">Dynamic Text</string>
+        <string name="scan_for_qr_code">SCAN FOR QR CODE</string>
+        <string name="search_namehint">Search Name</string>
+        <string name="language">LANGUAGE</string>
+        <string name="your_name">Your name</string>
+        <string name="please_enter_your_name">Please enter your name:</string>
+        <string name="audio_settings">AUDIO SETTINGS</string>
+        <string name="show_fun_facts">Show Fun Facts</string>
+        <string name="fact">Fact</string>
+        <string name="country">Country</string>
+        <string name="fun_facts">FUN FACTS</string>
+        <string name="did_you_know">DID YOU KNOW?</string>
+        <string name="close_screen">close screen</string>
+        <string name="image_of_bulb">image of bulb</string>
+        <string name="did_you_know2">DID YOU KNOW?</string>
+        <string name="nex">Next</string>
+        <string name="name_trivia">Name Trivia</string>
+        <string name="_0_00">0:00</string>
+        <string name="are_you_sure_you_want_to_exit">Are you sure you want to exit?</string>
+        <string name="opacity">opacity</string>
+
+
+    </resources>

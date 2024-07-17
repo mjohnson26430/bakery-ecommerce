@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#97d5da"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="20dp"
+
+        android:outlineSpotShadowColor="@color/blue"
+        app:cardBackgroundColor="#FAF9F6"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:contentDescription="@string/image_of_bulb"
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_alignParentStart="true"
+                android:paddingTop="15dp"
+                android:src="@drawable/bulb" />
+
+            <TextView
+                android:gravity="center"
+                android:fontFamily="@font/newbit"
+                android:id="@+id/title"
+                android:paddingTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/icon"
+                android:text="@string/did_you_know2"
+                android:textColor="#0d5056"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/countryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/newbit"
+                android:text="@string/country"
+                android:textAlignment="center"
+                android:textColor="#0d5056"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/factTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/countryTextView"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="@string/fact"
+                android:textColor="#0d5056"
+                android:lineSpacingExtra="8dp"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:contentDescription="@string/close_screen"
+                android:id="@+id/close_button"
+                android:layout_width="50dp"
+                android:paddingTop="40dp"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-27dp"
+                android:layout_marginEnd="-1dp"
+                android:background="@null"
+                android:paddingBottom="250dp"
+                android:src="@drawable/close" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="121dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/custombutton"
+        android:backgroundTint="#0d5056"
+        android:fontFamily="@font/newbit"
+        android:gravity="center"
+        android:paddingBottom="0dp"
+        android:text="@string/nex"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>
+

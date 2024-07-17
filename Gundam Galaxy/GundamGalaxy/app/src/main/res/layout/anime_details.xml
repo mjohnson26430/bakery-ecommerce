@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ShowDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="film_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ani1"
+        android:background="#F8E9E3"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/Price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: $10.99"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#E07263"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/Synopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat."
+        android:textColor="#666"
+        android:textSize="16sp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <include
+            layout="@layout/quantity_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add To Cart"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="#E07263"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="50dp"
+        android:clickable="true"
+        android:layout_marginEnd="50dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add To Wishlist"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="#E07263"
+        android:clickable="true"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+</LinearLayout>

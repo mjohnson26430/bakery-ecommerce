@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "609850069038",
+    "project_id": "name-quiz-82dfe",
+    "storage_bucket": "name-quiz-82dfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609850069038:android:ec8da69593986adfef8fbf",
+        "android_client_info": {
+          "package_name": "com.example.namequiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhb1MqYP5IXFlneBv15Pv1gbhz0UNAwog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="700dp"
+    android:background="@drawable/aesthetic"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textColor="#36454F"
+        android:text="Leaving Already..."
+        android:fontFamily="@font/newbit"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#A9A9A9"
+        android:layout_height="wrap_content"
+        android:text="@string/are_you_sure_you_want_to_exit"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/newbit"
+        android:layout_below="@id/exitcat"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/exitcat"
+        android:layout_width="372dp"
+        android:layout_height="264dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="2dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/chase" />
+</RelativeLayout>
