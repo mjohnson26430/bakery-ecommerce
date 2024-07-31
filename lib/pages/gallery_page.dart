@@ -28,7 +28,7 @@ class GalleryScreen extends StatelessWidget {
           children: [
             const SizedBox(height: 40),
             const Text(
-              'Tag us on Instagram for a chance to be featured',
+              'Tag us on Instagram for a chance to be featured @TheCozyCrumb',
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
